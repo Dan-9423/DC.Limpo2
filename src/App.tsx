@@ -16,9 +16,6 @@ import Auth from './pages/Auth';
 import NumeroExtenso from './pages/NumeroExtenso';
 
 // Import pages
-import ContasSemanais from './pages/relatorios/ContasSemanais';
-import ContasMensais from './pages/relatorios/ContasMensais';
-import Fechamento from './pages/relatorios/Fechamento';
 import FactoryDashboard from './pages/emails/FactoryDashboard';
 import Sacados from './pages/emails/Sacados';
 import EnviarEmail from './pages/emails/EnviarEmail';
@@ -62,11 +59,6 @@ function AppContent() {
               <Route path="/" element={<Home />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/numero-extenso" element={<NumeroExtenso />} />
-              
-              {/* Report Routes */}
-              <Route path="/relatorios/contas-semanais" element={<ContasSemanais />} />
-              <Route path="/relatorios/contas-mensais" element={<ContasMensais />} />
-              <Route path="/relatorios/fechamento" element={<Fechamento />} />
               
               {/* Factory Routes */}
               <Route path="/emails/dashboard" element={<FactoryDashboard />} />
